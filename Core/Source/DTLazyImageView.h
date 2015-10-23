@@ -7,6 +7,7 @@
 //
 
 #import <DTFoundation/DTWeakSupport.h>
+#import <PINRemoteImage/UIImageView+PINRemoteImage.h>
 
 @class DTLazyImageView;
 
@@ -62,10 +63,10 @@ extern NSString * const DTLazyImageViewDidFinishDownloadNotification;
  */
 @property (nonatomic, DT_WEAK_PROPERTY) id<DTLazyImageViewDelegate> delegate;
 
-
+@property FLAnimatedImageView *animatedImageSubView;
 /**
  @name Cancelling Download
-*/
+ */
 
 /**
  Cancels the image downloading

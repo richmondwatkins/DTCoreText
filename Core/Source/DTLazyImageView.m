@@ -220,6 +220,15 @@ NSString * const DTLazyImageViewDidFinishDownloadNotification = @"DTLazyImageVie
 	}
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    if (self.animatedImageSubView != nil) {
+        
+        self.animatedImageSubView.frame = self.bounds;
+    }
+}
+
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
 	// every time we get an response it might be a forward, so we discard what data we have
