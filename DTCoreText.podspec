@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DTCoreText'
-  spec.version      = '1.6.16'
+  spec.version      = '1.6.17'
   spec.platform     = :ios, '4.3'
   spec.license      = 'BSD'
   spec.source       = { :git => 'https://github.com/Cocoanetics/DTCoreText.git', :tag => spec.version.to_s }
@@ -22,4 +22,5 @@ Pod::Spec.new do |spec|
      /usr/bin/xxd -i default.css default.css.c
   CMD
 end
+
 
